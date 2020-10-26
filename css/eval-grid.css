@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+.body {
+    margin: 0;
+}   
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) repeat(4, 240px);
+    grid-template-rows: 240px 188px 112px 60px 330px 150px ;
+    grid-template-areas: 
+    "logo logo nav nav nav nav nav nav"
+    ". . . . . . . ."
+    "title title title title title title title title"
+    ". . . . . . . ."
+    ". . . . img-curiosity img-curiosity meteo meteo"
+    ". . . . vue4 vue3 vue2 vue1";
+    background-image: url("/mars-mission.jpg");
+    font-family: 'Strait', sans-serif;
+}
+
+.container * {
+    display: flex;
+}
+.logo {
+    grid-area: logo;
+}
+.nav {
+    grid-area: nav;
+}
+.title {
+    grid-area: title;
+}
+.img-curiosity {
+    grid-area: img-curiosity;
+}
+.meteo {
+    grid-area: meteo;
+}
+.vue4 {
+    grid-area: vue4;
+}
+.vue3 {
+    grid-area: vue3;
+}
+.vue2 {
+    grid-area: vue2;
+}
+.vue1 {
+    grid-area: vue1;
+}
